@@ -1,6 +1,10 @@
 
 h1. Flickr Photo Downloader v. 0.1
 
+*REQUIRES*
+* RubyGems
+* Fleakr
+
 p. This is REALLY simple, but effective, flickr downloader
 You can download by: *(a)* tags or *(b)* group (through users)
 It will create a directroy with the name of the tag or group
@@ -19,11 +23,15 @@ it's not doing what you expected. Your input means nothing ;)
 h3. TAGS
 
 p. To download a tag's first 100 photos, simply uncomment
-line #90: 
+line #140: 
 
-bq. Line 129 (before): #find_and_download
+Line 140 (before): 
 
-bq. Line 129  (after):  find_and_download
+bq. #find_and_download
+
+Line 140  (after):
+
+bq. find_and_download
 
 p. Then, run the script:
 
@@ -35,21 +43,19 @@ bq. space, hipsters, beer, girls with cigarettes
 
 p. Voila! Sit back and wait.
 
-
-
 h3. GROUPS
 
 Fleakr doesn't support finding by group ID (or I didn't see the option)
 so you must access the group through a Flickr user.
-Simply uncomment line 125:
+Simply uncomment line 141:
 
-(before)
+Line 141 (before):
 
-bq. Line 130 : #group_download
+bq. #group_download
 
-(after)
+Line 141 (after):
 
-bq. Line 130 :  group_download
+bq. group_download
 
 p. Then, run the script:
 
