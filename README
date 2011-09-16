@@ -1,0 +1,64 @@
+
+h1. Flickr Photo Downloader v. 0.1
+
+p. This is REALLY simple, but effective, flickr downloader
+You can download by: *(a)* tags or *(b)* group (through users)
+It will create a directroy with the name of the tag or group
+and place the photos there. There is no option to write by
+filename. You'll need to uncomment the method you wish to use
+before you run the script. (scroll to the bottom)
+
+h2. HOW TO USE:
+
+p. Follow the prompts... When it asks to CONTINUE, just press enter. If something is wrong,
+issue an interrupt with ctrl+c to stop the script. I'm using gets just to pause incase
+it's not doing what you expected. Your input means nothing ;)
+
+
+
+h3. TAGS
+
+p. To download a tag's first 100 photos, simply uncomment
+line #90: 
+
+bq. Line 129 (before): #find_and_download
+
+bq. Line 129  (after):  find_and_download
+
+p. Then, run the script:
+
+bq. ruby download-flickr-photos.rb
+
+p. Then type in the tags seperated by commas
+
+bq. space, hipsters, beer, girls with cigarettes
+
+p. Voila! Sit back and wait.
+
+
+
+h3. GROUPS
+
+Fleakr doesn't support finding by group ID (or I didn't see the option)
+so you must access the group through a Flickr user.
+Simply uncomment line 125:
+
+(before)
+
+bq. Line 130 : #group_download
+
+(after)
+
+bq. Line 130 :  group_download
+
+p. Then, run the script:
+
+bq. ruby download-flickr-photos.rb
+
+p. It will ask you for the username and
+group name EXACTLY as it appears on flickr.
+
+
+p. This software is released under the MIT license
+where applicable (not another entity's code).
+Copyright 2011, tehprofessor
